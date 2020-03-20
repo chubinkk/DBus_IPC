@@ -1,0 +1,6 @@
+[D-BUS Service] 
+Name=kr.gooroom.GHub 
+#Exec=/usr/lib/gooroom-agent-service/GHub.py 
+Exec=/home/user/myDBus/GHub.py 
+User=user 
+SystemdService=GHub.service 

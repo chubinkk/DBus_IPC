@@ -1,0 +1,5 @@
+[D-BUS Service] 
+Name=kr.gooroom.myAppA
+Exec=/home/user/myDBus/myAppA.py 
+User=root
+SystemdService=myAppA.service 

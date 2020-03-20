@@ -1,0 +1,9 @@
+[Unit]
+Description=Instance Job Agent
+After=network-online.target
+
+[Service]
+ExecStart=/home/user/myDBus/GEmu
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Instance Job Agent
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/user/myDBus/GHub.py
+
+[Install]
+WantedBy=multi-user.target

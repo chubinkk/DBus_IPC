@@ -1,0 +1,11 @@
+[Unit]
+Description=Instance Job Agent
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/user/myDBus/GCtrl.py
+ExecStop=/usr/bin/python3 /usr/lib/gooroom-agent-service/GCtrl.py stop
+ExecReload=/usr/bin/python3 /usr/lib/gooroom-agent-service/GCtrl.py reload
+
+[Install]
+WantedBy=multi-user.target
